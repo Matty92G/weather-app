@@ -1,6 +1,7 @@
 // import logo from "./logo.svg";
 import React from "react";
 import "../styles/App.css";
+import ForecastSummaries from "./ForecastSummaries";
 import LocationDetails from "./LocationDetails";
 
 // function App(props) {
@@ -15,17 +16,23 @@ import LocationDetails from "./LocationDetails";
 // }
 
 // function App(props) {
-//   const { location } = props;
+//   const { forecasts, location } = props;
 //   return (
 //     <div className="App">
 //       <LocationDetails city={location.city} country={location.country} />
+//       <ForecastSummaries forecasts={forecasts} />
 //     </div>
 //   );
 // }
 
-function App({ location }) {
-  const { city, country } = location;
-  return <LocationDetails city={city} country={country} />;
+function App({ location, forecasts }) {
+  return (
+    <div className="forecast">
+      <LocationDetails city={location.city} country={location.country} />
+
+      <ForecastSummaries forecasts={forecasts} />
+    </div>
+  );
 }
 
 export default App;
