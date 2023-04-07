@@ -27,10 +27,12 @@ import LocationDetails from "./LocationDetails";
 
 function App({ location, forecasts }) {
   return (
-    <div className="forecast">
-      <LocationDetails city={location.city} country={location.country} />
+    <div className="weather-app">
+      <div className="forecast">
+        <LocationDetails city={location.city} country={location.country} />
 
-      <ForecastSummaries forecasts={forecasts} />
+        <ForecastSummaries forecasts={forecasts} />
+      </div>
     </div>
   );
 }
