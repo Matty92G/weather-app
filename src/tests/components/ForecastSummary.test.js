@@ -1,11 +1,11 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { getByText, render } from "@testing-library/react";
 import ForecastSummary from "../../components/ForecastSummary";
 
 describe("ForecastSummary", () => {
   const validProps = {
     date: 11111111,
-    icon: "stubIcon",
+    icon: "800",
     description: "stubDescription",
     temperature: {
       min: 10,

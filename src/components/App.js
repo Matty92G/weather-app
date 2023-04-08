@@ -3,6 +3,7 @@ import React from "react";
 import "../styles/App.css";
 import ForecastSummaries from "./ForecastSummaries";
 import LocationDetails from "./LocationDetails";
+import ForecastDetails from "./ForecastDetails";
 
 // function App(props) {
 //   return (
@@ -32,6 +33,7 @@ function App({ location, forecasts }) {
         <LocationDetails city={location.city} country={location.country} />
 
         <ForecastSummaries forecasts={forecasts} />
+        <ForecastDetails forecasts={forecasts[0]} />
       </div>
     </div>
   );
