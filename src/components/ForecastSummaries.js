@@ -16,7 +16,7 @@ import "../styles/ForecastSummaries.css";
 //   </div>
 // }
 
-function ForecastSummaries({ forecasts }) {
+function ForecastSummaries({ forecasts, onForecastSelect }) {
   return (
     <div className="forecast-summaries">
       {forecasts.map((forecast) => (
@@ -25,6 +25,7 @@ function ForecastSummaries({ forecasts }) {
           date={forecast.date}
           description={forecast.description}
           icon={forecast.icon}
+          onSelect={onForecastSelect}
           temperature={forecast.temperature}
         />
       ))}
