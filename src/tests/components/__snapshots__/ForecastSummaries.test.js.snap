@@ -32,6 +32,11 @@ exports[`ForecastSummaries renders and matches snapshot 1`] = `
       >
         stubDescription1
       </div>
+      <button
+        type="button"
+      >
+        More details
+      </button>
     </div>
     <div
       class="forecast-summary"
@@ -60,6 +65,11 @@ exports[`ForecastSummaries renders and matches snapshot 1`] = `
       >
         stubDescription2
       </div>
+      <button
+        type="button"
+      >
+        More details
+      </button>
     </div>
   </div>
 </DocumentFragment>

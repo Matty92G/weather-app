@@ -11,6 +11,7 @@ describe("ForecastSummary", () => {
       min: 10,
       max: 99,
     },
+    onSelect: () => {},
   };
   it("renders and matches snapshot", () => {
     const { asFragment } = render(
@@ -19,6 +20,7 @@ describe("ForecastSummary", () => {
         icon={validProps.icon}
         description={validProps.description}
         temperature={validProps.temperature.max}
+        onSelect={validProps.onSelect}
       />
     );
     expect(asFragment).toMatchSnapshot();

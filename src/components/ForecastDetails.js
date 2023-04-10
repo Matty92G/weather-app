@@ -10,14 +10,6 @@ function ForecastDetails({ forecasts }) {
       <p>temperatureMin is {forecasts.temperature.min}</p>
       <p>windSpeed is {forecasts.wind.speed}</p>
       <p>windDirection is {forecasts.wind.direction}</p>
-      {/* //   key={forecast.date}
-        //   date={forecast.date}
-        //   description={forecast.description}
-        //   icon={forecast.icon}
-        //   temperatureMax={forecast.temperature.max}
-        //   temperatureMin={forecast.temperature.min}
-        //   windSpeed={forecast.wind.speed}
-        //   windDirection={forecast.wind.direction} */}
     </div>
   );
 }
